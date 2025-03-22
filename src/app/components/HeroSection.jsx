@@ -1,4 +1,4 @@
-"use client";
+"use client"; // designates component as Client Component - renders and executes within user's browser
 import React from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
