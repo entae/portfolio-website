@@ -1,9 +1,9 @@
-import React from 'react'
+// import React from 'react'
 
-const EmailSection = () => {
-  return (
-    <div>EmailSection</div>
-  )
-}
+// const EmailSection = () => {
+//   return (
+//     <div>EmailSection</div>
+//   )
+// }
 
-export default EmailSection
+// export default EmailSection
