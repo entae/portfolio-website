@@ -10,7 +10,7 @@ const projectsData = [
     gitUrl: "https://github.com/entae/ArtApp",
     previewUrl: "https://art-app-seven.vercel.app/",
     description: "Project 1 description",
-    // image: "/images/projects/art-app-image.png",
+    image: "/images/projects/art-app-image.png",
     tag: ["All", "Web"],
   },
   {
