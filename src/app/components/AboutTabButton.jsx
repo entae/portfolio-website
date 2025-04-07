@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutTabButton = ({ active, selectTab, children }) => {
   const buttonClasses = active
-    ? "text-white border-b border-teal-500"
+    ? "text-white border-b border-secondary-500"
     : "text-[#ADB7BE]";
 
   return (
