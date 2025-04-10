@@ -20,7 +20,7 @@ const projectsData = [
     gitUrl: "https://github.com/entae/portfolio-website",
     previewUrl: "/",
     description: "Project 2 description",
-    image: "/images/projects/2.png",
+    image: "/images/projects/portfolio-image.png",
     tag: ["All", "Web"],
   },
 ];
