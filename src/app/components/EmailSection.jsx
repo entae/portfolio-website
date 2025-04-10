@@ -41,7 +41,7 @@ const EmailSection = () => {
       id="contact"
       className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative"
     >
-      <div className="absolute top-1/2 -left-4 h-80 w-80 z-0 rounded-full blur-3xl transform -translate-x-1/2 -translate-y-1/2 bg-radial from from-primary-500 to-transparent"></div>
+      <div className="absolute top-1/2 -left-4 h-80 w-80 z-0 rounded-full blur-3xl transform -translate-x-1/2 -translate-y-1/2 bg-radial from from-sky-700/90 to-transparent"></div>
       <div className="justify-center z-10">
         <h5 className="text-4xl font-bold text-white my-2">Let's Connect!</h5>
         <p className="text-white text-base lg:text-lg mb-4 max-w-md">
