@@ -35,7 +35,7 @@ const HeroSection = () => {
               repeat={Infinity}
             />
           </h1>
-          <p className="text-[#ADB7BE] text-base sm:text-xl lg:text-2xl xl:col-span-12 2xl:col-span-6 mb-6">
+          <p className="text-[#ADB7BE] text-base sm:text-xl lg:text-2xl w-fit mb-6">
             Hi! I'm In Tae - a software developer passionate about creating
             meaningful web experiences and always eager to learn new
             technologies. I enjoy building, problem-solving, and continuously
@@ -64,9 +64,9 @@ const HeroSection = () => {
           initial={{ opacity: 0, scale: 0.75 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className="col-span-12 2xl:col-span-3 place-self-center mt-4 lg:mt-0"
+          className="col-span-12 xl:col-span-3 place-self-center mt-4 lg:mt-0"
         >
-          <div className="relative rounded-2xl bg-[#181818] w-[350px] h-[350px] lg:w-[400px] lg:h-[400px]">
+          <div className="relative rounded-2xl bg-[#181818] w-[350px] h-[350px]">
             <Image
               src="/images/display-picture.jpeg"
               alt="hero image"
