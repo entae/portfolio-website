@@ -42,9 +42,9 @@ const EmailSection = () => {
       className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative"
     >
       <div className="absolute top-1/2 -left-4 h-80 w-80 z-0 rounded-full blur-3xl transform -translate-x-1/2 -translate-y-1/2 bg-radial from from-primary-500 to-transparent"></div>
-      <div className="z-10">
-        <h5 className="text-xl font-bold text-white my-2">Let's Connect!</h5>
-        <p className="text=[#ADB7BE] text-base lg:text-lg mb-4 max-w-md">
+      <div className="justify-center z-10">
+        <h5 className="text-4xl font-bold text-white my-2">Let's Connect!</h5>
+        <p className="text=white text-base lg:text-lg mb-4 max-w-md">
           I'm currently looking for new opportunities and my inbox is always
           open. Whether you have a question or just want to say hi, I'll try my
           best to get back to you.
