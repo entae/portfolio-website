@@ -39,11 +39,15 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-2 marker:text-white">
         <li className="font-bold">Human Rights 101</li>
-        <li className="indent-6 list-none">Issued: The Ontario Rights Commission (Nov 27, 2024)</li>
+        <li className="indent-6 list-none">
+          Issued: The Ontario Rights Commission (Nov 27, 2024)
+        </li>
         <li className="font-bold">
           Integrated Accessibility Standards Regulations Training
         </li>
-        <li className="indent-6 list-none">Issued: AccessForward (Nov 27, 2024)</li>
+        <li className="indent-6 list-none">
+          Issued: AccessForward (Nov 27, 2024)
+        </li>
       </ul>
     ),
   },
@@ -60,24 +64,24 @@ const AboutSection = () => {
   };
 
   return (
-    <section className="text-white">
-      <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
+    <section id="about" className="text-white">
+      <div className="md:grid lg:grid-cols-2 gap-8 align-top py-16 px-4 sm:py-16 xl:gap-16 xl:px-16">
         <Image
           src="/images/about.jpg"
           alt="about image"
           className="rounded-3xl mb-4"
-          width={500}
-          height={500}
+          width={600}
+          height={600}
         />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-            I enjoy being challenged while learning to code in various languages
-            such as C, C++, HTML, Javascript, CSS, and Java. I hope to work in
-            an environment where I can not only be taught many things, but help
-            add convenience to others' lives with the things I make. My other
-            hobbies include film photography, playing the guitar, and finding
-            delicious food.
+            I enjoy being challenged to problem solve and have learned to code
+            in various languages such as C, C++, Javascript, Python, and Java. I
+            hope to work in an environment where I can not only be faced with
+            many interesting challenges, but help add convenience to others'
+            lives with the things I make. My other hobbies include photography,
+            playing the guitar, and finding delicious food.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <AboutTabButton
@@ -99,7 +103,7 @@ const AboutSection = () => {
               Certifications
             </AboutTabButton>
           </div>
-          <div className="mt-8">
+          <div className="mt-4 h-24">
             {TAB_DATA.find((t) => t.id === tab).content}
           </div>
         </div>
