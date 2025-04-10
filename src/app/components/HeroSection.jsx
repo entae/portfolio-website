@@ -8,15 +8,15 @@ import { motion } from "framer-motion";
 const HeroSection = () => {
   return (
     <section id="hero" className="lg:py-16">
-      <div className="grid grid-cols-1 lg:grid-cols-12">
+      <div className="md:grid xl:grid-cols-12 gap-4 align-top py-16 px-4 sm:py-16 xl:gap-16 xl:px-16">
         
         <motion.div
           initial={{ opacity: 0, scale: 0.75 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className="text-left col-span-12 lg:col-span-9"
+          className="text-left col-span-12 xl:col-span-9"
         >
-          <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-8xl leading-tight font-extrabold">
+          <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-7xl leading-tight font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary-400 to-primary-600">
               Hello, I'm{" "}
             </span>
@@ -35,7 +35,7 @@ const HeroSection = () => {
               repeat={Infinity}
             />
           </h1>
-          <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
+          <p className="text-[#ADB7BE] text-base sm:text-xl lg:text-2xl xl:col-span-12 2xl:col-span-6 mb-6">
             Hi! I'm In Tae - a software developer passionate about creating
             meaningful web experiences and always eager to learn new
             technologies. I enjoy building, problem-solving, and continuously
@@ -64,7 +64,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, scale: 0.75 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className="col-span-12 lg:col-span-3 place-self-center mt-4 lg:mt-0"
+          className="col-span-12 2xl:col-span-3 place-self-center mt-4 lg:mt-0"
         >
           <div className="relative rounded-2xl bg-[#181818] w-[350px] h-[350px] lg:w-[400px] lg:h-[400px]">
             <Image
