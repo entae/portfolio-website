@@ -65,7 +65,7 @@ const AboutSection = () => {
 
   return (
     <section id="about" className="text-white">
-      <div className="md:grid lg:grid-cols-2 gap-8 align-top py-16 px-4 sm:py-16 xl:gap-16 xl:px-16">
+      <div className="md:grid lg:grid-cols-2 gap-8 align-top py-16 px-4 xl:gap-16 xl:px-16">
         <Image
           src="/images/about.jpg"
           alt="about image"
@@ -81,7 +81,7 @@ const AboutSection = () => {
             hope to work in an environment where I can not only be faced with
             many interesting challenges, but help add convenience to others'
             lives with the things I make. My other hobbies include photography,
-            playing the guitar, and finding delicious food.
+            playing the guitar, and rock climbing.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <AboutTabButton

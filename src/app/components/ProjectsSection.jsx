@@ -18,7 +18,7 @@ const projectsData = [
     id: 2,
     title: "React Portfolio Website",
     gitUrl: "https://github.com/entae/portfolio-website",
-    previewUrl: "/",
+    previewUrl: "https://intaechung.com/",
     description: "Project 2 description",
     image: "/images/projects/portfolio-image.png",
     tag: ["All", "Web"],

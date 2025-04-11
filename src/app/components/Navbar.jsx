@@ -25,7 +25,7 @@ const Navbar = () => {
 
   return (
     <nav className={`fixed mx-auto border border-[#33353F] top-0 left-0 right-0 z-10 bg-[#121212]/90 ${navbarOpen ? 'bg-[#121212]/100' : 'bg-[#121212]/90'}`} >
-      <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
+      <div className="flex container lg:py-2 flex-wrap items-center justify-between mx-auto px-4 py-1">
         <Link
           href={"/"}
           className="text-2xl md:text-4xl p-4 text-white font-semibold"
@@ -43,7 +43,7 @@ const Navbar = () => {
           ) : (
             <button
               onClick={() => setNavbarOpen(true)}
-              className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white"
+              className="flex items-center px-3 py-2 border rounded border-slate-200/50 text-slate-200 hover:text-white hover:border-white"
             >
               <Bars3Icon className="h-5 w-5" />
             </button>

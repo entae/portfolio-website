@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 const HeroSection = () => {
   return (
     <section id="hero" className="lg:py-16">
-      <div className="md:grid xl:grid-cols-12 gap-4 align-top py-16 px-4 sm:py-16 xl:gap-16 xl:px-16">
+      <div className="md:grid xl:grid-cols-12 gap-4 align-top px-4 xl:gap-16 xl:px-16">
         
         <motion.div
           initial={{ opacity: 0, scale: 0.75 }}
