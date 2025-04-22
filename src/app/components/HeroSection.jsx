@@ -9,7 +9,6 @@ const HeroSection = () => {
   return (
     <section id="hero" className="lg:py-16">
       <div className="md:grid xl:grid-cols-12 gap-4 align-top px-4 xl:gap-16 xl:px-16">
-        
         <motion.div
           initial={{ opacity: 0, scale: 0.75 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -59,24 +58,23 @@ const HeroSection = () => {
             </a>
           </div>
         </motion.div>
-        
+
         <motion.div
           initial={{ opacity: 0, scale: 0.75 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className="col-span-12 xl:col-span-3 place-self-center mt-4 lg:mt-0"
+          className="flex justify-center items-center place-self-center col-span-12 xl:col-span-3 mt-4 lg:mt-0"
         >
-          <div className="relative rounded-2xl bg-[#181818] w-[350px] h-[350px]">
+          <div className="relative w-full aspect-square rounded-2xl bg-[#181818] h-[300px]">
             <Image
               src="/images/display-picture.jpeg"
               alt="hero image"
-              className="absolute rounded-full transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              width={300}
-              height={300}
+              fill
+              className="object-cover rounded-full"
+              // className="absolute rounded-full transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
             />
           </div>
         </motion.div>
-
       </div>
     </section>
   );
