@@ -13,9 +13,9 @@ const HeroSection = () => {
           initial={{ opacity: 0, scale: 0.75 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className="text-left col-span-12 xl:col-span-9"
+          className="text-left col-span-12 xl:col-span-8"
         >
-          <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-7xl leading-tight font-extrabold">
+          <h1 className="text-white mb-4 text-4xl sm:text-5xl xl:text-7xl leading-tight font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary-400 to-primary-600">
               Hello, I'm{" "}
             </span>
@@ -26,6 +26,8 @@ const HeroSection = () => {
                 1200,
                 "a Software Developer",
                 1200,
+                "a Software Engineer",
+                1200,
                 "a Web Developer",
                 1200,
               ]}
@@ -34,7 +36,7 @@ const HeroSection = () => {
               repeat={Infinity}
             />
           </h1>
-          <p className="text-[#ADB7BE] text-base sm:text-xl lg:text-2xl w-fit mb-6">
+          <p className="text-[#ADB7BE] text-base sm:text-xl xl:text-2xl w-fit mb-6">
             Hi! I'm In Tae - a software developer passionate about creating
             meaningful web experiences and always eager to learn new
             technologies. I enjoy building, problem-solving, and continuously
@@ -63,15 +65,15 @@ const HeroSection = () => {
           initial={{ opacity: 0, scale: 0.75 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className="flex justify-center items-center place-self-center col-span-12 xl:col-span-3 mt-4 lg:mt-0"
+          className="flex justify-center items-center place-self-center col-span-12 xl:col-span-4 mt-4 xl:mt-0 w-full"
         >
-          <div className="relative w-full aspect-square rounded-2xl bg-[#181818] h-[300px]">
+          <div className="w-3/4 xl:w-full rounded-2xl bg-[#181818] p-4">
             <Image
               src="/images/display-picture.jpeg"
               alt="hero image"
-              fill
-              className="object-cover rounded-full"
-              // className="absolute rounded-full transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              width={600}
+              height={600}
+              className="object-cover w-full h-auto rounded-full"
             />
           </div>
         </motion.div>

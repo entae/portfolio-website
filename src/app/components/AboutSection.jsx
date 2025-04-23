@@ -8,13 +8,37 @@ const TAB_DATA = [
     title: "Skills",
     id: "skills",
     content: (
-      <ul className="list-disc pl-2 marker:text-white">
-        <li>Node.js</li>
-        <li>Express</li>
-        <li>SQL</li>
-        <li>JavaScript</li>
-        <li>React.js</li>
-      </ul>
+      <div className="grid grid-cols-3 gap-3">
+        <div>
+          <h3 className="text-lg font-semibold mb-2">Confident</h3>
+          <ul className="list-disc list-inside space-y-1 pl-2 marker:text-white">
+            <li>JavaScript</li>
+            <li>React.js</li>
+            <li>Node.js</li>
+            <li>SQL</li>
+            <li>MongoDB</li>
+            <li>Oracle DB</li>
+            <li>Python</li>
+            <li>GitHub</li>
+            <li>Git</li>
+          </ul>
+        </div>
+        <div>
+          <h3 className="text-lg font-semibold mb-2">Competent</h3>
+          <ul className="list-disc list-inside space-y-1 pl-2 marker:text-white">
+            <li>C</li>
+            <li>C++</li>
+          </ul>
+        </div>
+        <div>
+          <h3 className="text-lg font-semibold mb-2">Practiced</h3>
+          <ul className="list-disc list-inside space-y-1 pl-2 marker:text-white">
+            <li>AWS</li>
+            <li>Java</li>
+            <li>Selenium</li>
+          </ul>
+        </div>
+      </div>
     ),
   },
   {
@@ -69,7 +93,7 @@ const AboutSection = () => {
         <Image
           src="/images/about.jpg"
           alt="about image"
-          className="rounded-3xl mb-4"
+          className="rounded-3xl mb-2"
           width={600}
           height={600}
         />
@@ -83,7 +107,7 @@ const AboutSection = () => {
             lives with the things I make. My other hobbies include photography,
             playing the guitar, and rock climbing.
           </p>
-          <div className="flex flex-row justify-start mt-8">
+          <div className="flex flex-row justify-start mt-8 gap-4">
             <AboutTabButton
               selectTab={() => handleTabChange("skills")}
               active={tab === "skills"}
@@ -103,7 +127,7 @@ const AboutSection = () => {
               Certifications
             </AboutTabButton>
           </div>
-          <div className="mt-4 h-24">
+          <div className="mt-4 my-auto">
             {TAB_DATA.find((t) => t.id === tab).content}
           </div>
         </div>
