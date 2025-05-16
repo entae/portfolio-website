@@ -53,6 +53,7 @@ const HeroSection = () => {
                   width={60}
                   height={60}
                   className="object-cover w-full h-full rounded-full"
+                  priority
                 />
               </div>
             </motion.div>

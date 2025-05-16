@@ -96,6 +96,7 @@ const AboutSection = () => {
           className="rounded-3xl mb-2"
           width={600}
           height={600}
+          priority
         />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
