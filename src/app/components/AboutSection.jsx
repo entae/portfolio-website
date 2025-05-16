@@ -92,11 +92,11 @@ const AboutSection = () => {
       <div className="md:grid lg:grid-cols-2 gap-8 align-top py-16 px-4 xl:gap-16 xl:px-16">
         <Image
           src="/images/about.jpg"
-          alt="about image"
-          className="rounded-3xl mb-2"
           width={600}
           height={600}
-          priority
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          alt="Image of In Tae standing in in front of a rocky wall and a blue sky above."
+          className="rounded-3xl mb-2"
         />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>

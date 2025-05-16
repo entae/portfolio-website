@@ -8,9 +8,7 @@ import { motion } from "framer-motion";
 const HeroSection = () => {
   return (
     <section id="hero" className="lg:py-16">
-      <div
-        className="md:grid gap-2 px-4 xl:gap-16 xl:px-16"
-      >
+      <div className="md:grid gap-2 px-4 xl:gap-16 xl:px-16">
         <motion.div
           initial={{ opacity: 0, scale: 0.75 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -49,9 +47,10 @@ const HeroSection = () => {
               <div className="rounded-full bg-[#191919]">
                 <Image
                   src="/images/hero-image-sticker.png"
-                  alt="hero image"
-                  width={60}
-                  height={60}
+                  width={500}
+                  height={500}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  alt="Image of In Tae in a black shirt and a green jacket, with no background."
                   className="object-cover w-full h-full rounded-full"
                   priority
                 />
