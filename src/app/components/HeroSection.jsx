@@ -46,9 +46,9 @@ const HeroSection = () => {
               transition={{ duration: 0.5 }}
               className="w-60 h-60 justify-self-start sm:justify-self-center"
             >
-              <div className="rounded-2xl bg-[#181818] p-2">
+              <div className="rounded-full bg-[#191919]">
                 <Image
-                  src="/images/display-picture.jpeg"
+                  src="/images/hero-image-sticker.png"
                   alt="hero image"
                   width={60}
                   height={60}
