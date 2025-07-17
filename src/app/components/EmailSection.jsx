@@ -8,6 +8,15 @@ import Image from "next/image";
 const EmailSection = () => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
 
+  const [message, setMessage] = useState("");
+  const maxChars = 269;
+
+  const handleChange = (e) => {
+    setMessage(e.target.value);
+  };
+
+  const isOverLimit = message.length > maxChars;
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     const data = {
@@ -39,7 +48,7 @@ const EmailSection = () => {
   return (
     <section
       id="contact"
-      className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative"
+      className="scroll-mt-10 grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative"
     >
       <div className="absolute top-1/2 -left-4 h-80 w-80 z-0 rounded-full blur-3xl transform -translate-x-1/2 -translate-y-1/2 bg-radial from from-sky-700/90 to-transparent"></div>
       <div className="justify-center z-10">
@@ -54,7 +63,12 @@ const EmailSection = () => {
             <Image src={GithubIcon} alt="Github Icon" width={35} height={35} />
           </Link>
           <Link href="https://www.linkedin.com/in/intae-chung/">
-            <Image src={LinkedinIcon} alt="Linkedin Icon" width={40} height={40} />
+            <Image
+              src={LinkedinIcon}
+              alt="Linkedin Icon"
+              width={40}
+              height={40}
+            />
           </Link>
         </div>
       </div>
@@ -109,9 +123,18 @@ const EmailSection = () => {
                 <textarea
                   name="message"
                   id="message"
+                  value={message}
+                  onChange={handleChange}
                   className="bg-[#18191E] border border-[#33353F] placeholder=[#9CA2A9] text-gray-100 text-md rounded-md block w-full p-2.5"
                   placeholder="Let's talk about..."
                 />
+                <div
+                  className={`mt-1 text-sm ${
+                    isOverLimit ? "text-red-500" : "text-gray-400"
+                  }`}
+                >
+                  {message.length} / {maxChars}
+                </div>
               </div>
               <button
                 type="submit"

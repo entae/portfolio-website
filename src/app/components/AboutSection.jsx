@@ -5,36 +5,99 @@ import AboutTabButton from "./AboutTabButton";
 
 const TAB_DATA = [
   {
+    title: "Experience",
+    id: "experience",
+    content: (
+      <ul className="list-disc pl-2 marker:text-white list-outside [&_ul]:list-[revert]">
+        <li>
+          <p className="font-bold pr-2">
+            Junior Full Stack Engineer - Alltourage (Startup)
+          </p>
+          <p>Jan 2025 - Current</p>
+          <ul className="ml-6">
+            <li>
+              Engineered full-stack features for an HR SaaS referral platform
+              using RESTful APIs, GraphQL, TypeScript, and Material UI,
+              enhancing referral efficiency across client organizations
+            </li>
+            <li>
+              Built and maintained CI/CD pipelines with GitHub Actions, Docker,
+              and AWS, decreasing deployment time by 10% and enabling more
+              reliable production pushes.
+            </li>
+            <li>
+              Collaborated closely with design, QA, and product teams in Agile
+              sprints to deliver continuous value and drive rapid iteration.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p className="font-bold">
+            Software Engineer Co-op - MCCSS (Ontario Ministry)
+          </p>
+          <p>Jan 2024 - Dec 2024</p>
+          <ul className="ml-6">
+            <li>
+              Developed microservices RESTful APIs in Java Spring Boot, and SQL
+              for a government case management platform processing over 10,000
+              applicant records per month.
+            </li>
+            <li>
+              Supported automated end-to-end testing using Selenium to ensure
+              system reliability.
+            </li>
+            <li>
+              Validated UI designs against user story requirements and reported
+              updates during Agile scrums.
+            </li>
+            <li>
+              Applied Test-Driven Development (TDD) to maintain 80%+ code
+              coverage, creating unit and integration tests that reduced
+              production bugs.
+            </li>
+            <li>
+              Initiated the development of a calculator tool, which later
+              accelerated workflows by 200%.
+            </li>
+          </ul>
+        </li>
+      </ul>
+    ),
+  },
+  {
     title: "Skills",
     id: "skills",
     content: (
       <div className="grid grid-cols-3 gap-3">
         <div>
-          <h3 className="text-lg font-semibold mb-2">Confident</h3>
+          <h3 className="text-lg font-semibold mb-2">Expert</h3>
           <ul className="list-disc list-inside space-y-1 pl-2 marker:text-white">
+            <li>TypeScript</li>
             <li>JavaScript</li>
             <li>React.js</li>
             <li>Node.js</li>
+            <li>Express.js</li>
             <li>SQL</li>
             <li>MongoDB</li>
-            <li>Oracle DB</li>
             <li>Python</li>
             <li>GitHub</li>
             <li>Git</li>
           </ul>
         </div>
         <div>
-          <h3 className="text-lg font-semibold mb-2">Competent</h3>
+          <h3 className="text-lg font-semibold mb-2">Experienced</h3>
           <ul className="list-disc list-inside space-y-1 pl-2 marker:text-white">
             <li>C</li>
             <li>C++</li>
+            <li>Java</li>
+            <li>Oracle DB</li>
+            <li>Jira</li>
           </ul>
         </div>
         <div>
-          <h3 className="text-lg font-semibold mb-2">Practiced</h3>
+          <h3 className="text-lg font-semibold mb-2">Hands-on</h3>
           <ul className="list-disc list-inside space-y-1 pl-2 marker:text-white">
             <li>AWS</li>
-            <li>Java</li>
             <li>Selenium</li>
           </ul>
         </div>
@@ -50,6 +113,7 @@ const TAB_DATA = [
           Computer Programming - Ontario College Diploma
         </li>
         <li className="indent-6 list-none">Seneca College (2024)</li>
+        <li className="indent-6 text-green-500 font-thin list-none">4.0 GPA</li>
         <li className="font-bold">
           Honours Law & Society - Bachelor's of Arts
         </li>
@@ -78,7 +142,7 @@ const TAB_DATA = [
 ];
 
 const AboutSection = () => {
-  const [tab, setTab] = useState("skills");
+  const [tab, setTab] = useState("experience");
   const [isPending, startTransition] = useTransition();
 
   const handleTabChange = (id) => {
@@ -88,7 +152,7 @@ const AboutSection = () => {
   };
 
   return (
-    <section id="about" className="text-white">
+    <section id="about" className="text-white scroll-mt-10">
       <div className="md:grid lg:grid-cols-2 gap-8 align-top py-16 px-4 xl:gap-16 xl:px-16">
         <Image
           src="/images/about.jpg"
@@ -109,6 +173,12 @@ const AboutSection = () => {
             playing the guitar, and rock climbing.
           </p>
           <div className="flex flex-row justify-start mt-8 gap-4">
+            <AboutTabButton
+              selectTab={() => handleTabChange("experience")}
+              active={tab === "experience"}
+            >
+              Experience
+            </AboutTabButton>
             <AboutTabButton
               selectTab={() => handleTabChange("skills")}
               active={tab === "skills"}
